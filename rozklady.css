@@ -1,0 +1,160 @@
+/* ===== PODSTRONY ROZKŁADÓW JAZDY ===== */
+
+.page-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--light-blue) 100%);
+    padding: 30px 40px 36px;
+    text-align: center;
+    position: relative;
+}
+
+.page-hero h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0 6px;
+}
+
+.page-hero p {
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+/* Main content */
+.schedule-main {
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 0 30px;
+}
+
+.schedule-notice {
+    background: #fff8e1;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 18px;
+    font-size: 13px;
+    color: #6b4c00;
+    margin-bottom: 32px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.schedule-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-top: 4px solid var(--blue);
+}
+
+.schedule-card-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 14px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.day-badge {
+    background: var(--accent);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.weekend-badge {
+    background: #c8e6ff;
+    color: var(--navy);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.schedule-table thead tr {
+    background: var(--light-gray);
+}
+
+.schedule-table thead th {
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7a8a9a;
+}
+
+.schedule-table tbody tr {
+    border-top: 1px solid #edf0f5;
+    transition: background 0.15s;
+}
+
+.schedule-table tbody tr:hover {
+    background: #f4f7fb;
+}
+
+.schedule-table tbody td {
+    padding: 11px 16px;
+    color: var(--text);
+}
+
+.schedule-table tbody td.time {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.schedule-contact-box {
+    background: var(--navy);
+    color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding: 18px 24px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.schedule-contact-box a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .schedule-grid { grid-template-columns: 1fr; }
+    .page-hero { padding: 20px; }
+}

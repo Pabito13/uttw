@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi Transportowe Tomasz Wolski</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="generated-image-1-4.png">
+
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Lewa: dropdown -->
+        <nav class="nav-left" id="navLeft">
+            <button class="dropdown-btn" onclick="toggleNav()">
+                <img src="generated-image-1-4-remove-background_com.png" alt="" class="header-logo">
+                Rozkłady Jazdy
+                <span class="arrow">▼</span>
+            </button>
+
+            <div class="dropdown-menu">
+                <div class="section-label">Wybierz miejscowość</div>
+                <a href="rozklady-szczebrzeszyn.html">📍 Rozkłady Szczebrzeszyn</a>
+                <a href="rozklady-ulchuwek.html">📍 Rozkłady Ułchówek</a>
+                <a href="rozklady-wiezbie.html">📍 Rozkłady Wieżbie</a>
+                <a href="rozklady-labunki.html">📍 Rozkłady Łabuńki</a>
+            </div>
+        </nav>
+
+        <!-- Środek: nazwa firmy -->
+
+        <div class="company-name">
+            <h1> Usługi Transportowe<br>Tomasz Wolski</h1>
+        </div>
+
+        <!-- Prawa: kontakt -->
+
+        <div class="nav-right">
+            <span class="contact-pill">📞 111 111 111</span>
+        </div>
+    </header>
+    <!-- ===== GŁÓWNA CZĘŚĆ ===== -->
+
+    <main>
+        <!-- Lewa: mapa Europy -->
+        <div class="bus-section">
+            <div class="map-container">
+                <div id="map-wrapper" style="width:100%;background:#cde4f5;position:relative;">
+                    <svg id="europe-map" style="width:100%;display:block;"></svg>
+                    <div
+                        style="position:absolute;bottom:10px;left:10px;background:rgba(255,255,255,0.85);padding:6px 10px;border-radius:6px;font-family:Arial;font-size:11px;display:flex;align-items:center;gap:6px;">
+                        <span
+                            style="display:inline-block;width:14px;height:14px;background:#1a6eb5;border-radius:2px;"></span>
+                        <span style="color:#0d2b55;font-weight:bold;">Kraje w których byliśmy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bus-caption">Gdzie byliśmy</div>
+        </div>
+
+        <!-- Prawa: O nas -->
+
+        <div class="about-section">
+            <h2>
+                O Nas
+            </h2>
+            <div class="section-line"></div>
+            <ul class="about-list">
+                <li>
+                    <span class="icon">✓</span>
+                    <div>Świadczymy usługi transportu pasażerskiego na terenie gminy Łabunie i okolic od wielu lat,
+                        zyskując zaufanie lokalnej społeczności.</div>
+                </li>
+                <li>
+                    <span class="icon">🛡</span>
+                    <div>Stawiamy na bezpieczeństwo i komfort podróży – nasz tabor jest regularnie serwisowany i spełnia
+                        wszelkie normy techniczne.</div>
+                </li>
+                <li>
+                    <span class="icon">🗓</span>
+                    <div>Oferujemy regularne kursy na trasach: Szczebrzeszyn, Ułchówek, Wieżbie oraz Łabuńki, dopasowane
+                        do potrzeb pasażerów.</div>
+                </li>
+                <li>
+                    <span class="icon">⏰</span>
+                    <div>Punktualność i rzetelność to nasze priorytety – możesz na nas liczyć przez cały rok,
+                        niezależnie od warunków pogodowych.</div>
+                </li>
+                <li>
+                    <span class="icon">📞</span>
+                    <div>Jesteśmy do Twojej dyspozycji – skontaktuj się z nami w celu uzyskania informacji o rozkładach
+                        lub rezerwacji kursu specjalnego.</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+
+    <!-- ===== NASZE USŁUGI ===== -->
+
+    <section class="services-section">
+        <div class="services-inner">
+            <h2 class="services-title">Nasze Usługi</h2>
+            <div class="services-line"></div>
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Przewóz Osób Międzynarodowy</h3>
+                    <p>Organizujemy wygodne i bezpieczne przejazdy do krajów Europy Zachodniej i Południowej. Docieramy
+                        m.in. do Niemiec, Francji, Włoch, Austrii, Belgii i wielu innych krajów – regularnie i
+                        punktualnie.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🇵🇱</div>
+                    <h3>Przewóz Osób na Terenie Polski</h3>
+                    <p>Świadczymy usługi transportu pasażerskiego na terenie całego kraju. Obsługujemy trasy lokalne i
+                        dalekobieżne, zapewniając komfort podróży oraz terminowość realizacji kursów.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎒</div>
+                    <h3>Dowóz Dzieci do Szkół Podstawowych</h3>
+                    <p>Zapewniamy bezpieczny i regularny dowóz dzieci do szkół podstawowych na terenie gminy. Kierowcy
+                        posiadają wymagane uprawnienia, a trasy są dostosowane do potrzeb uczniów i rodziców.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORMULARZ KONTAKTOWY ===== -->
+    <section class="contact-section">
+        <div class="contact-inner">
+            <h2 class="contact-title">Kontakt</h2>
+            <div class="contact-line"></div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon">📍</span>
+                        <div><strong>Adres</strong><br>Łabunie Reforma 4</div>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon">📞</span>
+                        <div><strong>Telefon</strong><br>111 111 111</div>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon">🕐</span>
+                        <div><strong>Godziny kontaktu</strong><br>Pon–Pt: 7:00 – 18:00<br>Sob: 8:00 – 14:00</div>
+                    </div>
+                </div>
+                <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="subject" value="Nowa wiadomość ze strony - Usługi Transportowe Tomasz Wolski">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Imię i nazwisko</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Jan Kowalski" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Telefon</label>
+                            <input type="tel" id="contact-phone" name="telefon" placeholder="500 000 000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">E-mail</label>
+                        <input type="email" id="contact-email" name="email" placeholder="jan@przykład.pl" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Temat</label>
+                        <select id="contact-subject" name="temat">
+                            <option value="">Wybierz temat...</option>
+                            <option value="Pytanie o rozkład jazdy">Pytanie o rozkład jazdy</option>
+                            <option value="Rezerwacja kursu specjalnego">Rezerwacja kursu specjalnego</option>
+                            <option value="Przewóz międzynarodowy">Przewóz międzynarodowy</option>
+                            <option value="Dowóz dzieci do szkół">Dowóz dzieci do szkół</option>
+                            <option value="Inne">Inne</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Wiadomość</label>
+                        <textarea id="contact-message" name="message" rows="4" placeholder="Napisz do nas..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Wyślij wiadomość ✉</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STOPKA ===== -->
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>Dane Firmy</h3>
+                <p>
+                    Usługi Transportowe<br>
+                    <strong>Tomasz Wolski</strong>
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Biuro</h3>
+                <p>
+                    📍 Łabunie Reforma 4<br>
+                    📞 Tel: 111 111 111
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Rozkłady Jazdy</h3>
+                <p>
+                    <a href="rozklady-szczebrzeszyn.html">Szczebrzeszyn</a><br>
+                    <a href="rozklady-ulchuwek.html">Ułchówek</a><br>
+                    <a href="rozklady-wiezbie.html">Wieżbie</a><br>
+                    <a href="rozklady-labunki.html">Łabuńki</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Usługi Transportowe Tomasz Wolski. Wszelkie prawa zastrzeżone.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
